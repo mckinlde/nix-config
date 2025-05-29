@@ -45,9 +45,13 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  # Hyprland
+  services.xserver.displayManager.lightdm.enable = false; # login manager breaks things with hyprland
+  programs.hyprland = {
+    enable = true;
+    withUWSM = true; # recommended for most users
+    xwayland.enable = true; # Xwayland can be disabled.
+  };
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -90,6 +94,9 @@
       vlc
       pgadmin4-desktopmode
       lf
+      kitty
+      wofi
+      kdePackages.dolphin
     ];
   };
 
