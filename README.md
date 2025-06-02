@@ -17,7 +17,7 @@ Onboard Windows and MacOS users to Linux, specifically NixOS with hyprland. Make
 
 
 ### Add-Ons
-- Windows VM, MacOS VM packaged with NixOS
+- Windows VM, MacOS VM packaged with NixOS (via QEMU)
 - iCal/GoogleCal/Calendly/Windows Calendar/Outlook Calendar into ticktick
 - chats into (Beeper)[https://www.beeper.com/] (equivalent to "Your Phone" / iMessage)
 
