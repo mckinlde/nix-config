@@ -88,19 +88,19 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     #  thunderbird
-      firefox
-      vscodium
-      tailscale
+      firefox # ToDo: webscraping with geckodriver, start saving config/settings
+      vscodium # ToDo: start saving vscodium config/settings
+      tailscale # ToDo: setup
       vlc
-      pgadmin4-desktopmode
-      lf
-      kitty
-      wofi
-      kdePackages.dolphin
-      waybar
-      networkmanagerapplet
-      obsidian
-      google-chrome
+      pgadmin4-desktopmode # ToDo: setup, start saving config/auths
+      lf # I forget what this is for
+      kitty # terminal
+      wofi # I forget what this is for
+      kdePackages.dolphin # File Explorer GUI
+      waybar # Top bar, ToDo: start tracking config
+      networkmanagerapplet # WiFi GUI? Application?  Can I get on wifi without this? (maybe just from terminal?)
+      obsidian # Notes app
+      google-chrome # Sigh.  Gotta have chrome for the odd extension or chromedriver.
     ];
   };
 
@@ -114,20 +114,22 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    git
-    gh
-    htop
+    git # local git
+    gh # online github (ssh tools)
+    htop # I forget what I needed htop for but I'm sure it was important
     wget
     unzip
-    brightnessctl
+    brightnessctl # needed for screen brightness adjustments
     dig
+    # Reading and formatting random USBs
     usbutils
     parted
     exfatprogs
+    # ToDo: start syncing files to home NAS with syncthing
     syncthing
     ];
 
-  # add fonts
+  # add fonts (needed for waybar icons, except with Matoska's Nix they're working?  Are these wrapped in a hyprland or waybar config?)
   fonts = {
     enableDefaultPackages = true;
     packages = with pkgs; [
