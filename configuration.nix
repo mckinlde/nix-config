@@ -81,6 +81,9 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
+  # Enable udisks2 for automount and permissions management
+  services.udisks2.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.dmei = {
     isNormalUser = true;
@@ -128,12 +131,6 @@
     # ToDo: start syncing files to home NAS with syncthing
     syncthing
     ];
-
-  # More USB mounting/formatting diskutils
-  {
-    services.udisks2.enable = true;
-  }
-
 
   # add fonts (needed for waybar icons, except with Matoska's Nix they're working?  Are these wrapped in a hyprland or waybar config?)
   fonts = {
