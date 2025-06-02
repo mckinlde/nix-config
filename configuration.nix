@@ -119,6 +119,7 @@
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     git # local git
     gh # online github (ssh tools)
+    git-lfs # git large file storage
     htop # I forget what I needed htop for but I'm sure it was important
     wget
     unzip
