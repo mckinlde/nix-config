@@ -130,6 +130,7 @@
     exfatprogs
     # ToDo: start syncing files to home NAS with syncthing
     syncthing
+    tree # this is for drawing filestructure in terminal
     ];
 
   # add fonts (needed for waybar icons, except with Matoska's Nix they're working?  Are these wrapped in a hyprland or waybar config?)
