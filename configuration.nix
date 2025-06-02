@@ -122,6 +122,7 @@
     brightnessctl
     dig
     usbutils
+    parted
     syncthing
     ];
 
