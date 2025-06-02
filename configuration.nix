@@ -121,6 +121,7 @@
     unzip
     brightnessctl
     dig
+    syncthing
     ];
 
   # add fonts
