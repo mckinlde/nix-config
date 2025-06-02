@@ -123,6 +123,7 @@
     dig
     usbutils
     parted
+    exfatprogs
     syncthing
     ];
 
