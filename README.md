@@ -26,7 +26,6 @@ Onboard Windows and MacOS users to Linux, specifically NixOS with hyprland. Make
 - a linux equivalent to Cortana / Siri?
 - syncthing over IP with TailScale?
 - remote desktop (also via tailscale?)
-- (final check)[]
 - (another check)[https://techspirited.com/list-of-mac-equivalents-to-windows-software-programs]
 - (check again)[https://www.makeuseof.com/tag/windows-programs-macos-apps/]
 - find may (listicles)[https://windowsforum.com/threads/5-essential-apps-to-bring-mac-like-features-to-windows-11.346760/] (like)[https://www.xda-developers.com/30-best-windows-alternatives-to-the-best-mac-applications/] (these)[https://www.owc.com/blog/20-great-apps-for-working-between-mac-and-windows-pcs], scrape them for thing:is::this:that relationships, and adopt the most tightly connected web.
