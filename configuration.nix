@@ -129,6 +129,12 @@
     syncthing
     ];
 
+  # More USB mounting/formatting diskutils
+  {
+    services.udisks2.enable = true;
+  }
+
+
   # add fonts (needed for waybar icons, except with Matoska's Nix they're working?  Are these wrapped in a hyprland or waybar config?)
   fonts = {
     enableDefaultPackages = true;
