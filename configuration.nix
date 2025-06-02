@@ -121,6 +121,7 @@
     unzip
     brightnessctl
     dig
+    usbutils
     syncthing
     ];
 
