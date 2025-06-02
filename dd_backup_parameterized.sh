@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # This script automates the process of cloning the used portion of a partition to a backup folder on a USB drive.
-# Usage: ./dd_backup_parameterized.sh [SOURCE_PARTITION] [USB_MOUNT_POINT] [BACKUP_FOLDER] [IMAGE_NAME]
+# Usage: sudo bash /home/dmei/nixos/dd_backup_parameterized.sh [SOURCE_PARTITION] [USB_MOUNT_POINT] [BACKUP_FOLDER] [IMAGE_NAME]
 # Example:
-# ./dd_backup_parameterized.sh /dev/sda2 /run/media/dmei/Gigastone backup sda2_backup.img
+# sudo bash /home/dmei/nixos/dd_backup_parameterized.sh /dev/sda2 /run/media/dmei/Gigastone backup sda2_backup.img
 #
 # To find the required parameter values, you can use the following commands:
 # 1. To find the source partition (e.g., /dev/sda2):
@@ -70,7 +70,7 @@ if [ ! -d "$USB_MOUNT_POINT" ]; then
 fi
 
 # Create the backup folder if it doesn't exist
-mkdir -p "$USB_MOUNT_POINT/$BACKUP_FOLDER"
+sudo mkdir -p "$USB_MOUNT_POINT/$BACKUP_FOLDER"
 
 # Start the cloning process
 echo "Cloning $SOURCE_PARTITION to $USB_MOUNT_POINT/$BACKUP_FOLDER/$IMAGE_NAME"
