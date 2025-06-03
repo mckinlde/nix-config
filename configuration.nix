@@ -132,6 +132,10 @@
     # ToDo: start syncing files to home NAS with syncthing
     syncthing
     tree # this is for drawing filestructure in terminal
+    # Clipboard tools (b/c I'm unable to copy/paste between vscodium and firefox?? What the hell?
+    wl-clipboard # for Wayland
+    xclip        # for X11
+    kitty
     ];
 
   # add fonts (needed for waybar icons, except with Matoska's Nix they're working?  Are these wrapped in a hyprland or waybar config?)
