@@ -118,7 +118,13 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    ## This next section is stuff that I need to support @Matoska's /.bashrc
     zellij # terminal multiplexer; tmux but better
+    dircolors
+    bash-completion
+    fzf
+    yazi
+    ## end @Matoska's /.bashrc dependencies
     git # local git
     gh # online github (ssh tools)
     git-lfs # git large file storage
