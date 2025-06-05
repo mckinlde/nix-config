@@ -104,6 +104,7 @@
       networkmanagerapplet # WiFi GUI? Application?  Can I get on wifi without this? (maybe just from terminal?)
       obsidian # Notes app
       google-chrome # Sigh.  Gotta have chrome for the odd extension or chromedriver.
+      libreoffice-qt-fresh # time to get some office tools
     ];
   };
 
