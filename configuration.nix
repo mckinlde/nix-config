@@ -120,7 +120,7 @@
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     ## This next section is stuff that I need to support @Matoska's /.bashrc
     zellij # terminal multiplexer; tmux but better
-    dircolors
+    coreutils
     bash-completion
     fzf
     yazi
