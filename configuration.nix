@@ -149,6 +149,8 @@
     kitty
     # ToDo: clipboard still breaks sometimes, mostly when cp/pst-ing from vscode to firefox
     jq # for parsing json
+    # End clipboard tools; TODO: FireFox is having annoying windowing/settings issues
+    postgresql
     ];
 
   # add fonts (needed for waybar icons, except with Matoska's Nix they're working?  Are these wrapped in a hyprland or waybar config?)
