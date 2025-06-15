@@ -108,6 +108,7 @@
       obsidian # Notes app
       google-chrome # Sigh.  Gotta have chrome for the odd extension or chromedriver.
       libreoffice-qt-fresh # time to get some office tools
+      virtualbox # there are options for this that I may need to look into
     ];
   };
 
