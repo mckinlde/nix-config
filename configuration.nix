@@ -91,7 +91,7 @@
   users.users.dmei = {
     isNormalUser = true;
     description = "dmei";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
     packages = with pkgs; [
     #  thunderbird
       firefox # ToDo: webscraping with geckodriver, start saving config/settings
@@ -116,6 +116,10 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
+  # Enable QEMU + Virt-Manager for Raspberry Pi Emulation
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -151,6 +155,8 @@
     jq # for parsing json
     # End clipboard tools; TODO: FireFox is having annoying windowing/settings issues
     postgresql
+    # Added QEMU + Virt-manager for Raspberry Pi Emulation
+    virt-manager qemu qemu_full libvirt
   ];
 
 
