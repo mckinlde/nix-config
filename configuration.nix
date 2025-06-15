@@ -136,6 +136,7 @@
     gh # online github (ssh tools)
     git-lfs # git large file storage
     htop # I forget what I needed htop for but I'm sure it was important
+    file # There's gotta be some linux megapack that I'm missing
     wget
     unzip
     brightnessctl # needed for screen brightness adjustments
