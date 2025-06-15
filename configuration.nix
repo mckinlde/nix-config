@@ -117,10 +117,6 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # VirtualBox support
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "dmei" ];
-
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -155,9 +151,6 @@
     jq # for parsing json
     # End clipboard tools; TODO: FireFox is having annoying windowing/settings issues
     postgresql
-    # VirtualBox
-    virtualbox
-    virtualboxExtpack
   ];
 
 
