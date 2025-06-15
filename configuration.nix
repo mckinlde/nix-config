@@ -151,19 +151,16 @@
     jq # for parsing json
     # End clipboard tools; TODO: FireFox is having annoying windowing/settings issues
     postgresql
-    virtualbox # there are options for this that also need to be present
-    virualboxExtpack    
-];
-
-  # virtualbox options
-{
+      # VirtualBox support
   virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "dmei" ]; # Replace with your actual username
+
+  users.extraGroups.vboxusers.members = [ "dmei" ];
+
   environment.systemPackages = with pkgs; [
+    # ... your existing packages ...
     virtualbox
     virtualboxExtpack
   ];
-}
 
 
   # add fonts (needed for waybar icons, except with Matoska's Nix they're working?  Are these wrapped in a hyprland or waybar config?)
