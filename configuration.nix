@@ -107,8 +107,7 @@
       networkmanagerapplet # WiFi GUI? Application?  Can I get on wifi without this? (maybe just from terminal?)
       obsidian # Notes app
       google-chrome # Sigh.  Gotta have chrome for the odd extension or chromedriver.
-      libreoffice-qt-fresh # time to get some office tools
-      virtualbox # there are options for this that I may need to look into
+      libreoffice-qt-fresh # time to get some office tools      
     ];
   };
 
@@ -152,7 +151,20 @@
     jq # for parsing json
     # End clipboard tools; TODO: FireFox is having annoying windowing/settings issues
     postgresql
-    ];
+    virtualbox # there are options for this that also need to be present
+    virualboxExtpack    
+];
+
+  # virtualbox options
+{
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "dmei" ]; # Replace with your actual username
+  environment.systemPackages = with pkgs; [
+    virtualbox
+    virtualboxExtpack
+  ];
+}
+
 
   # add fonts (needed for waybar icons, except with Matoska's Nix they're working?  Are these wrapped in a hyprland or waybar config?)
   fonts = {
