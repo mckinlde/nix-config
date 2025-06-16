@@ -158,6 +158,7 @@
     postgresql
     # Added QEMU + Virt-manager for Raspberry Pi Emulation
     virt-manager qemu qemu_full libvirt
+    iw
   ];
 
 
