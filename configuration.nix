@@ -160,6 +160,7 @@
     virt-manager qemu qemu_full libvirt
     iw
     lshw
+    passmark-performancetest
   ];
 
 
