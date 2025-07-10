@@ -95,7 +95,7 @@
     packages = with pkgs; [
     #  thunderbird
       firefox # ToDo: webscraping with geckodriver, start saving config/settings
-      vscodium # ToDo: start saving vscodium config/settings
+      vscodium.fhs # ToDo: start saving vscodium config/settings
       tailscale # ToDo: setup
       vlc
       pgadmin4-desktopmode # ToDo: setup, start saving config/auths
