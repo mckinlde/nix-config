@@ -50,12 +50,16 @@
   # Enable stuff I need for Electron/Chromium apps on Linux — especially on Wayland. (google chrome)
   services.dbus.enable = true;
   services.upower.enable = true;
+  
   xdg.portal = {
     enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
+    xdgOpenUsePortal = true;
+    extraPortals = [
+      pkgs.xdg-desktop-portal-hyprland
+      pkgs.xdg-desktop-portal-gtk
+    ];
     config.common.default = "hyprland";
   };
-
 
   # Hyprland
   services.xserver.displayManager.lightdm.enable = false; # login manager breaks things with hyprland
