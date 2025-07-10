@@ -47,6 +47,15 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
+  # Enable stuff I need for Electron/Chromium apps on Linux — especially on Wayland. (google chrome)
+  services.dbus.enable = true;
+  services.upower.enable = true;
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
+    config.common.default = "hyprland";
+  };
+
 
   # Hyprland
   services.xserver.displayManager.lightdm.enable = false; # login manager breaks things with hyprland
