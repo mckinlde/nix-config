@@ -106,8 +106,6 @@
       waybar # Top bar, ToDo: start tracking config
       networkmanagerapplet # WiFi GUI? Application?  Can I get on wifi without this? (maybe just from terminal?)
       obsidian # Notes app
-      google-chrome # Sigh.  Gotta have chrome for the odd extension or chromedriver.
-      chromedriver
       libreoffice-qt-fresh # time to get some office tools      
     ];
   };
@@ -163,6 +161,8 @@
     lshw
     passmark-performancetest
     lsof
+    google-chrome
+    chromedriver
   ];
 
 
