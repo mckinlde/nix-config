@@ -162,6 +162,7 @@
     iw
     lshw
     passmark-performancetest
+    lsof
   ];
 
 
