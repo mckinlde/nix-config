@@ -95,7 +95,7 @@
     packages = with pkgs; [
     #  thunderbird
       firefox # ToDo: webscraping with geckodriver, start saving config/settings
-      vscodium.fhs # ToDo: start saving vscodium config/settings
+      vscodium.fhs # ToDo: start saving vscodium config/settings; fhs was an attempt at getting copy/paste to work but it didn't hold
       tailscale # ToDo: setup
       vlc
       pgadmin4-desktopmode # ToDo: setup, start saving config/auths
@@ -107,6 +107,7 @@
       networkmanagerapplet # WiFi GUI? Application?  Can I get on wifi without this? (maybe just from terminal?)
       obsidian # Notes app
       google-chrome # Sigh.  Gotta have chrome for the odd extension or chromedriver.
+      chromedriver
       libreoffice-qt-fresh # time to get some office tools      
     ];
   };
