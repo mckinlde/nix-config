@@ -101,6 +101,12 @@
   # Enable udisks2 for automount and permissions management
   services.udisks2.enable = true;
 
+  # Enable cron
+  services.cron = {
+    enable = true;
+  };
+
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.dmei = {
     isNormalUser = true;
