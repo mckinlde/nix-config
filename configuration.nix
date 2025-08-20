@@ -177,6 +177,7 @@
     lsof
     google-chrome
     chromedriver
+    cron
   ];
 
 
