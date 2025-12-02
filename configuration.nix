@@ -45,8 +45,20 @@
     LC_TIME = "en_US.UTF-8";
   };
 
+  # Graphics stack
+  hardware.graphics.enable = true;
+  hardware.nvidia = {
+    modesetting.enable = true;
+    powerManagement.enable = false;
+    open = false; # use proprietary driver, not the new open one
+    nvidiaSettings = true; # optional nvidia-settings gui
+  };
+
   # Enable the X11 windowing system.
   services.xserver.enable = true;
+  # X11 video drivers - adjust to match whatever you already had
+  services.xserver.videoDrivers = [ "modesetting" "nvidia" ];
+
   # Enable stuff I need for Electron/Chromium apps on Linux — especially on Wayland. (google chrome)
   services.dbus.enable = true;
   services.upower.enable = true;
